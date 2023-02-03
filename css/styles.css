@@ -313,7 +313,9 @@ body {
 }
 
 .pursuit {
-  padding: 98px 0 114px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 98px 0 0 0;
   background: url("../img/pursuit/bgr_ld.png") left no-repeat;
 }
 .pursuit__row {
@@ -374,4 +376,42 @@ body {
   font-size: 28px;
   line-height: 44px;
   color: #303B40;
+  margin: 0 0 114px 0;
+}
+
+.experience {
+  height: 560px;
+  background-image: url("../img/pursuit/bgrimg.png");
+  background-repeat: no-repeat;
+  background-size: 1354px 560px;
+  background-position: 113px 100%;
+}
+.experience__body {
+  height: 560px;
+  display: grid;
+  grid-template-columns: 1fr 556px;
+  grid-template-rows: 1fr 362px 1fr;
+}
+.experience__textarea {
+  max-width: 556px;
+  background: #F69A1B;
+  padding: 56px 0 74px 0;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.experience__title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin: 0 0 24px 0;
+  padding-left: 61px;
+}
+.experience__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-left: 67px;
+  max-width: 500px;
 }
