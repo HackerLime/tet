@@ -4,9 +4,13 @@ body{
 	font-family: "Montserrat";
 }
 .wrapper{
+	overflow: hidden;
 	min-height: 100vh;
-	
-	
+	display: flex;
+	flex-direction: column;
+}
+.content{
+	flex: 1 1 auto;
 }
 .first {
 	background: url("../img/first/bgr_lu.png") left no-repeat;
@@ -414,4 +418,206 @@ body{
 }
 .container {
 }
+.services {
+	margin: 0 0 100px 0;
 
+	&__outsourcing {
+		padding: 100px 0;
+		border-bottom: 1px solid #E8E8E8;
+		max-width: 1150px;
+		margin: 0px auto;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 54px;
+		color:#303B40;
+		margin: 0 0 46px 0;
+	}
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+
+	&__column{
+		flex: 0 1 50%;
+	}
+
+	&__card {
+		min-height:380px ;
+		max-width: 550px;
+		background: #F6F8F9;
+		border: 1px solid #E8E8E8;
+		margin: 0 0 30px 0;
+		padding: 58px 0 0 0;
+	}
+
+	&__card-title {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color:#303B40;
+		padding-left: 59px;
+		margin: 0 0 12px 0;
+	}
+
+	&__budgeting {
+		span{
+			background: url("../img/services/budgeting\ 1.png") left no-repeat;
+			padding: 10px 0 10px 53px;
+		}
+	}
+
+	&__cart-list {
+		padding-left: 118px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	&__cart-listitem {
+		background: url("../img/services/Ellipse.png") 0 50% no-repeat;
+		padding-left: 18px;
+	}
+
+	&__contract {
+		span{
+			background: url("../img/services/contract\ 1.png") left no-repeat;
+			padding: 10px 0 10px 53px;
+	}
+		}
+	
+
+	&__document {
+		span{
+			background: url("../img/services/document\ 1.png") left no-repeat;
+			padding: 10px 0 10px 53px;
+	}
+	}
+
+	&__examination {
+		span{
+			background: url("../img/services/examination\ 1.png") left no-repeat;
+			padding: 10px 0 10px 53px;
+	}
+}
+.longitem{
+	background-position: 0 16px ;
+	line-height: 20px;
+}
+}
+.outsourcing {
+	display: flex;
+	
+
+	&__body {
+		max-width: 753px;
+		margin: 0 29px 0 0;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 54px;
+		margin: 0 0 47px 0;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 32px;
+		margin: 0 0 48px 0;
+	}
+
+	&__subtext {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: #5477BB;
+	}
+
+	&__banner {
+		display: flex;
+		flex-direction: column;
+		flex: 0 0 362px;
+		background: #F69A1B;
+		padding: 60px 0 72px 72px;
+		position: relative;
+	}
+
+	&__bannernum {
+		font-weight: 900;
+		font-size: 90px;
+		line-height: 70px;
+		color: #FFFFFF;
+		margin: 0 0 38px 0;
+	}
+
+	&__banner-text {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 32px;
+		color: #FFFFFF;
+		max-width: 225px;
+		
+	}
+}
+.whomsuitable {
+	padding: 75px 0 97px 0;
+
+	&__body {
+		display: flex;
+		margin: 0px -15px;
+	}
+	&__column{
+		flex: 0 0 50%;
+		padding: 0 15px;
+	}
+	&__head {
+		margin: 0 0 50px 0;
+	}
+
+	&__sect {
+		border-left: 2px solid #5477BB;
+		margin: 0 0 50px 0;
+		padding-left: 41px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 54px;
+		margin: 0 0 21px 0;
+		
+	}
+
+	&__subtitle {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 30px;
+		color: #5477BB;
+		padding: 0 0 20px 0;
+		text-transform: uppercase;
+	}
+
+	&__card {
+	}
+
+	&__card-title {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 30px;
+		margin: 0 0 11px 0;
+	}
+
+	&__card-text {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 28px;
+	}
+}
