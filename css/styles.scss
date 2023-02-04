@@ -3,6 +3,11 @@
 body{
 	font-family: "Montserrat";
 }
+.wrapper{
+	min-height: 100vh;
+	
+	
+}
 .first {
 	background: url("../img/first/bgr_lu.png") left no-repeat;
 	padding-top: 20px;
@@ -153,18 +158,19 @@ body{
 
 	&_command {
 		background: url("../img/aboutus/bgr_upr.png") right no-repeat;
+	
 	}
 }
 .aboutus {
 	display: flex;
+	padding: 0px 99px;
+	
 
 	&__body {
-		padding: 99px 0 0 99px;
-		max-width: 1453px;
-		border:1px solid #E8E8E8;
+		border-left:1px solid #E8E8E8;
 	}
 	&__content{
-		
+		padding: 99px 0 0 99px;
 	}
 
 	&__title {
@@ -192,13 +198,220 @@ body{
 
 	&__lasttext {
 		display: flex;
-		align-items: center;
-		justify-items: center;
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 32px;
+		background: #F6F8F9;
+		padding: 40px 99px;
 		width: 950px;
-		height: 201px;
-		background: #F6F8F9
+		
 	}
 }
+
+.command {
+	display: flex;
+	flex-direction: column;
+
+	&__body {
+		border-top: #E8E8E8 1px solid;
+		border-bottom:#E8E8E8 1px solid;
+		padding: 100px 0;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 32px 0;
+	}
+
+	&__rowtext {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 54px;
+		color: #303B40;
+	}
+
+	&__rowbuttons {
+		display: flex;
+		justify-content: end;
+	}
+
+	&__buttonleft {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		background: #F6F8F9;
+		border: 1px solid #E8E8E8;
+	}
+
+	&__buttonright {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		background: #5477BB;
+	}
+
+	&__subtitle {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 30px;
+		color: #5477BB;
+		margin: 0 0 45px 0;
+	}
+
+	&__workersbody {
+		display: flex;
+		margin: 0 -15px;
+		
+	}
+
+	&__workerscolumn {
+		padding: 0 15px;
+	}
+
+	&__workersimg {
+		margin: 0 0 18px 0;
+	}
+
+	&__workersname {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+		margin: 0 0 10px 0;
+	}
+
+	&__workersproffesion {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		color: #8C969A;
+	}
+}
+.pursuit {
+	display: flex;
+	flex-direction: column;
+	padding: 98px 0 0 0;
+	background: url("../img/pursuit/bgr_ld.png") left no-repeat;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 34px 0;
+	}
+
+	&__textbodyleft {
+		flex: 0 0 656px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 54px;
+		color: #303B40;
+		margin: 0 0 34px 0;
+	}
+
+	&__subtitle {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: #5477BB;
+		margin: 0 0 49px 0;
+	}
+
+	&__texta {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 32px;
+		color: #303B40;
+	}
+
+	&__textbodyright {
+		background: #F6F8F9;
+		border: 1px solid #E8E8E8;
+		width: 460px;
+		height: 352px;
+		
+
+	}
+
+	&__textbodyrigttitle {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 30px;
+		text-transform: uppercase;
+		padding: 43px 0 0 67px;
+		margin: 0 0 27px 0;
+	}
+
+	&__textbodyrightlist {
+		padding: 0 0 0 69px;
+	}
+
+	&__listitem {
+		padding-left: 18px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 40px;
+		background: url("../img/pursuit/Ellipse.png") left no-repeat;
+	}
+
+	&__subtext {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 44px;
+		color:#303B40;
+		margin: 0 0 114px 0;
+	}
+}
+
+ .experience {
+	height: 560px;
+	background-image:url("../img/pursuit/bgrimg.png") ;
+	background-repeat: no-repeat;
+	background-size: 1354px 560px;
+	background-position: 113px 100%;
+	&__body {
+		height: 560px;
+		display: grid;
+		grid-template-columns: 1fr 556px;
+		grid-template-rows: 1fr 362px 1fr;
+	}
+
+	&__textarea {
+		max-width: 556px;
+		background: #F69A1B;
+		padding: 56px 0 74px 0;
+		grid-column: 2/3;
+		grid-row: 2/3;
+
+	}
+
+	&__title {
+		font-weight: 900;
+		font-size: 60px;
+		line-height: 60px;
+		color: #FFFFFF;
+		margin: 0 0 24px 0;
+		padding-left: 61px;
+	}
+
+	&__text {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 32px;
+		color: #FFFFFF;
+		padding-left: 67px;
+		max-width: 500px;
+	}
+}
+.container {
+}
+
