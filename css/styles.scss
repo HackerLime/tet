@@ -11,9 +11,14 @@ body{
 }
 .content{
 	flex: 1 1 auto;
+	max-width: 1920px;
+	
 }
+
+	
+
 .first {
-	background: url("../img/first/bgr_lu.png") left no-repeat;
+	background: url("../img/first/bgr_lu.png") 0 0 no-repeat;
 	padding-top: 20px;
 
 
